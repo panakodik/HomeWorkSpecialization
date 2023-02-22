@@ -15,3 +15,11 @@ foreach (string s in originalStrings)
         count++;
     }
 }
+
+Console.WriteLine();
+Console.WriteLine("Массив из строк, длина которых <= 3 символам");
+// выводим новый массив
+for (int i = 0; i < count; i++)
+{
+    Console.Write("*" + originalStrings[i] + "* ");
+}
