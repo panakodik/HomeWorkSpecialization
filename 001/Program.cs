@@ -3,3 +3,15 @@ Console.WriteLine("Имеющийся массив строк");
 string[] originalStrings = { "driver", "Home", "window", "you", "my", "car" };
 string[] shortStrings = new string[originalStrings.Length];
 int count = 0;
+
+// проходим по каждой строке в исходном массиве
+foreach (string s in originalStrings)
+{
+    Console.Write("*" + s + "* ");
+    // если длина строки <= 3, добавляем ее в новый массив
+    if (s.Length <= 3)
+    {
+        shortStrings[count] = s;
+        count++;
+    }
+}
